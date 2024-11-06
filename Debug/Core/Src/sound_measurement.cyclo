@@ -1,0 +1,16 @@
+../Drivers/CMSIS/Include/core_cm0plus.h:741:22:__NVIC_EnableIRQ	2
+../Drivers/CMSIS/Include/core_cm0plus.h:777:22:__NVIC_DisableIRQ	2
+../Core/Src/sound_measurement.c:90:6:getSoundData	10
+../Core/Src/sound_measurement.c:157:6:soundInit	3
+../Core/Src/sound_measurement.c:169:6:clearMaximumAmplitude	1
+../Core/Src/sound_measurement.c:178:13:startMicSettlingPeriod	2
+../Core/Src/sound_measurement.c:189:13:micSettlingComplete	2
+../Core/Src/sound_measurement.c:202:6:enableMicrophone	5
+../Core/Src/sound_measurement.c:241:6:startSPLcalculation	3
+../Core/Src/sound_measurement.c:258:6:HAL_I2S_RxHalfCpltCallback	1
+../Core/Src/sound_measurement.c:266:6:HAL_I2S_RxCpltCallback	1
+../Core/Src/sound_measurement.c:272:13:processHalfDMAbuffer	3
+../Core/Src/sound_measurement.c:293:6:HAL_I2S_ErrorCallback	1
+../Core/Src/sound_measurement.c:304:13:calculateSPLQ31	20
+../Core/Src/sound_measurement.c:430:13:resetSPLstate	2
+../Core/Src/sound_measurement.c:447:17:getFilteredMaxAmplitudeQ31	8

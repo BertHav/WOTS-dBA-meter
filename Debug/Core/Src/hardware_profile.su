@@ -1,0 +1,2 @@
+../Core/Src/hardware_profile.c:20:6:errorHandler	24	static
+../Core/Src/hardware_profile.c:29:6:printString	24	static
