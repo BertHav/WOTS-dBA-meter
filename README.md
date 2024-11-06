@@ -38,6 +38,8 @@ The UART module is used for printing results to a computer terminal (MCU to PC d
 
 3. The build result (elf) is output to a directory named debug.
 
+WARNING changing the ioc file and generate new code will corrupt the main.c and main.h file.
+
 
 ## License
 
