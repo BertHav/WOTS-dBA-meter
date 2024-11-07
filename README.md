@@ -25,18 +25,33 @@ When calculating SPL, some frequencies can be emphasized relative to others (kno
 
 ## Demo project setup
 
-The demonstration project was tested on a STM32L072 microcontroller, such as found on the WOTS board, with a ICS4343 MEMS microphone connected to the I2S port.
+The demonstration project was tested on a STM32L072 microcontroller, such as found on the WOTS board, with a ICS43434 MEMS microphone connected to the I2S port.
 
 The UART module is used for printing results to a computer terminal (MCU to PC direction only).
 
 
 ## Build and run
 
-1. The project uses the STM32CubeIDE.
+1. The project uses the STM32CubeIDE for building the elf file.
 
-2. The program continually print SPL and peak sound amplitude.
+2. Use STM32CubeProgrammer to programm the STM32L072
+   
+3. Open the elf file in the debug directory
 
-3. The build result (elf) is output to a directory named debug.
+4. Change UART to USB to enable the upload in DFU mode
+
+5. Press on the WOTS the reset button while holding, press the boot button.
+
+6. Release the reset button before the boot button. 
+
+7. The WOTS device is now in DFU mode. 
+
+8. Check if the port is set to USB1 or press the refresh button beside the Port field.
+
+9. Press the Download button to upload the elf.
+
+10. The program continually print SPL and peak sound amplitude to UART riser on the PCB.
+
 
 WARNING changing the ioc file and generate new code will corrupt the main.c and main.h file.
 
